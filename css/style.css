@@ -1,0 +1,148 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.8;
+    background: #111;
+    color: #eee;
+    padding: 2rem;
+}
+
+/* Container */
+
+main,
+article,
+header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    margin-bottom: 4rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #999;
+}
+
+/* Cards da home */
+
+.post-card {
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post-card p {
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.post-card small {
+    color: #777;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Página do artigo */
+
+article {
+    max-width: 800px;
+}
+
+article h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+article h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+article h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article ul,
+article ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+article blockquote {
+    border-left: 4px solid #666;
+    padding-left: 1rem;
+    color: #aaa;
+    margin: 1rem 0;
+}
+
+article code {
+    background: #222;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+article pre {
+    background: #222;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+
+a {
+    color: #4ea1ff;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    article h1 {
+        font-size: 2rem;
+    }
+
+}

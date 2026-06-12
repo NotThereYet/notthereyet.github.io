@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>NotThereYet</title>
+
+<link>https://notthereyet.github.io</link>
+
+<description>
+Learning, building, and documenting the journey.
+</description>
+
+<item>
+
+<title>
+Why I Created NotThereYet
+</title>
+
+<link>
+https://notthereyet.github.io/post.html?slug=why-i-created-notthereyet
+</link>
+
+<description>
+The story behind this blog.
+</description>
+
+</item>
+
+</channel>
+
+</rss>
