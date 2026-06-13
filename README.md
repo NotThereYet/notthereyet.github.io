@@ -12,9 +12,19 @@ Blog pessoal hospedado no GitHub Pages. Um espaço para documentar aprendizados,
 
 Este blog usa uma estrutura dinâmica — você só precisa adicionar o conteúdo e ele aparece automaticamente.
 
-**Passo 1:** Crie um arquivo Markdown em `posts/` (ex: `posts/meu-novo-artigo.md`)
+**Passo 1:** Crie uma pasta para o artigo em `posts/` (ex: `posts/meu-novo-artigo/`)
 
-**Passo 2:** Adicione a entrada correspondente em `data/posts.json`:
+**Passo 2:** Dentro dessa pasta, crie um arquivo `index.md` com o conteúdo do artigo em Markdown
+
+**Passo 3:** Se o artigo tiver imagens ou vídeos, coloque-os na mesma pasta do artigo e referencie-os no Markdown:
+
+```markdown
+![Descrição da imagem](imagem.jpg)
+
+![Descrição do vídeo](video.mp4)
+```
+
+**Passo 4:** Adicione a entrada correspondente em `data/posts.json`:
 
 ```json
 {
@@ -27,9 +37,9 @@ Este blog usa uma estrutura dinâmica — você só precisa adicionar o conteúd
 }
 ```
 
-**Passo 3:** Atualize `rss.xml` e `sitemap.xml` com o novo artigo
+**Passo 5:** Atualize `rss.xml` e `sitemap.xml` com o novo artigo
 
-**Passo 4:** Faça commit e push — o GitHub Pages publica automaticamente
+**Passo 6:** Faça commit e push — o GitHub Pages publica automaticamente
 
 ### Tags disponíveis
 
@@ -52,7 +62,13 @@ Este blog usa uma estrutura dinâmica — você só precisa adicionar o conteúd
 │   ├── home.js         # Lista de artigos
 │   └── post.js         # Renderização de artigo
 ├── data/posts.json     # Metadados dos artigos
-├── posts/              # Conteúdo Markdown
+├── posts/              # Conteúdo Markdown (cada artigo é uma pasta)
+│   ├── artigo-1/
+│   │   ├── index.md    # Conteúdo do artigo
+│   │   ├── imagem.jpg  # Imagens do artigo
+│   │   └── video.mp4   # Vídeos do artigo
+│   └── artigo-2/
+│       └── index.md
 ├── rss.xml             # Feed RSS
 └── sitemap.xml         # Mapa do site
 ```

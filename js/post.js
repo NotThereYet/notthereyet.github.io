@@ -67,7 +67,7 @@ async function loadPost() {
     try {
         const [postsRes, mdRes] = await Promise.all([
             fetch("data/posts.json"),
-            fetch(`posts/${slug}.md`)
+            fetch(`posts/${slug}/index.md`)
         ]);
 
         if (!mdRes.ok) throw new Error("Artigo não encontrado");
