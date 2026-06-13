@@ -1,3 +1,66 @@
-<article id="post"></article>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo — NotThereYet</title>
+    <meta name="description" content="Leitura no blog NotThereYet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
 
-<script src="js/post.js"></script>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="./" class="site-logo">
+                <span class="site-logo__name">NotThereYet</span>
+                <span class="site-logo__tagline">Blog de experiências</span>
+            </a>
+            <nav class="site-nav">
+                <a href="./#posts">Artigos</a>
+                <a href="./#sobre">Sobre</a>
+                <a href="./rss.xml">RSS</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="post-page">
+        <div class="container container--narrow">
+            <a href="./" class="back-link">← Voltar ao início</a>
+
+            <header class="post-header" id="post-header" hidden>
+                <div class="post-header__meta">
+                    <span class="post-header__tag" id="post-tag"></span>
+                    <time class="post-header__date" id="post-date"></time>
+                    <span class="post-header__reading" id="post-reading"></span>
+                </div>
+                <h1 class="post-header__title" id="post-title"></h1>
+                <p class="post-header__description" id="post-description"></p>
+            </header>
+
+            <article class="post-content" id="post">
+                <div class="loading-state">
+                    <div class="loading-state__spinner"></div>
+                    <p>Carregando artigo...</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <span class="site-footer__brand">NotThereYet © 2026</span>
+            <span class="site-footer__quote">"Progresso acima de perfeição."</span>
+            <div class="site-footer__links">
+                <a href="./rss.xml">RSS</a>
+                <a href="https://github.com/notthereyet/notthereyet.github.io">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/post.js"></script>
+</body>
+</html>

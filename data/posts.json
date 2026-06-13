@@ -1,14 +1,26 @@
 [
   {
-    "slug": "why-i-created-notthereyet",
-    "title": "Why I Created NotThereYet",
-    "date": "2026-06-12",
-    "description": "The reason behind this blog."
+    "slug": "o-poder-da-consistencia",
+    "title": "O poder da consistência",
+    "date": "2026-06-13",
+    "description": "Por que pequenas ações diárias vêm grandes esforços esporádicos — e como construir hábitos que duram.",
+    "tag": "aprendizado",
+    "readingTime": "4 min de leitura"
   },
   {
-    "slug": "learning-english",
-    "title": "Learning English Changed My Life",
-    "date": "2026-06-13",
-    "description": "My experience learning English."
+    "slug": "aprendendo-programar-aos-30",
+    "title": "Aprendendo a programar aos 30",
+    "date": "2026-06-12",
+    "description": "Você não é velho demais para começar. A verdade sobre aprender tecnologia depois dos 30.",
+    "tag": "aprendizado",
+    "readingTime": "5 min de leitura"
+  },
+  {
+    "slug": "minimalismo-digital",
+    "title": "Minimalismo digital",
+    "date": "2026-06-11",
+    "description": "Como recuperei minha atenção e minha vida reduzindo o consumo digital desnecessário.",
+    "tag": "vida",
+    "readingTime": "5 min de leitura"
   }
 ]

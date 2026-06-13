@@ -1,40 +1,105 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>NotThereYet</title>
-
-<meta name="description" content="Learning, building, and documenting the journey.">
-
-<link rel="stylesheet" href="./css/style.css">
-```
-
+    <title>NotThereYet — Ainda não cheguei lá</title>
+    <meta name="description" content="Um blog sobre crescimento pessoal, aprendizado e as experiências que moldam quem estamos nos tornando.">
+    <meta name="author" content="NotThereYet">
+    <meta property="og:title" content="NotThereYet">
+    <meta property="og:description" content="Ainda não cheguei lá. E é exatamente por isso que escrevo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://notthereyet.github.io">
+    <link rel="alternate" type="application/rss+xml" title="NotThereYet RSS" href="./rss.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-```
-<header>
-    <h1>NotThereYet</h1>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="./" class="site-logo">
+                <span class="site-logo__name">NotThereYet</span>
+                <span class="site-logo__tagline">Blog de experiências</span>
+            </a>
+            <nav class="site-nav">
+                <a href="#posts">Artigos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="./rss.xml">RSS</a>
+            </nav>
+        </div>
+    </header>
 
-    <p>
-        Learning, building, and documenting the journey.
-    </p>
-</header>
+    <main>
+        <section class="hero">
+            <div class="container container--narrow">
+                <span class="hero__badge">Em construção — como a vida</span>
+                <h1 class="hero__title">Ainda não cheguei lá. E tudo bem.</h1>
+                <p class="hero__subtitle">
+                    Este é um espaço para registrar o que aprendo, o que erro, o que muda
+                    e o que me faz continuar. Não escrevo como especialista — escrevo como alguém
+                    que ainda está no caminho.
+                </p>
+                <div class="hero__topics">
+                    <span class="hero__topic">Crescimento pessoal</span>
+                    <span class="hero__topic">Aprendizado</span>
+                    <span class="hero__topic">Tecnologia</span>
+                    <span class="hero__topic">Vida real</span>
+                    <span class="hero__topic">Recomeços</span>
+                </div>
+            </div>
+        </section>
 
-<main>
+        <section class="section" id="posts">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Últimos artigos</h2>
+                    <span class="section__count" id="posts-count"></span>
+                </div>
+                <div class="posts-grid" id="posts-container">
+                    <div class="loading-state">
+                        <div class="loading-state__spinner"></div>
+                        <p>Carregando artigos...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="posts-container">
-        <p>Loading posts...</p>
-    </section>
+        <section class="section" id="sobre">
+            <div class="container container--narrow">
+                <div class="about-block">
+                    <h2 class="about-block__title">Por que NotThereYet?</h2>
+                    <p>
+                        O nome vem de uma verdade simples: não importa onde eu esteja hoje,
+                        sempre haverá um próximo passo. Um idioma para aprender, uma habilidade
+                        para desenvolver, uma versão melhor de mim para construir.
+                    </p>
+                    <p>
+                        Este blog é o registro desse processo — <em>progresso acima de perfeição</em>.
+                        Cada artigo nasce de experiências reais: frustrações, descobertas,
+                        recomeços e pequenas vitórias que, somadas, viram história.
+                    </p>
+                    <p>
+                        Novos textos aparecem conforme a vida acontece. Volte quando quiser.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-</main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <span class="site-footer__brand">NotThereYet © 2026</span>
+            <span class="site-footer__quote">"Progresso acima de perfeição."</span>
+            <div class="site-footer__links">
+                <a href="./rss.xml">RSS</a>
+                <a href="https://github.com/notthereyet/notthereyet.github.io">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-<script src="./js/home.js"></script>
-```
-
+    <script src="./js/home.js"></script>
 </body>
 </html>
